@@ -24,10 +24,10 @@ function Reminders() {
           loop={false}
           loopDelay={0}
         />
-        <p className="text-zinc-400 text-[20px]">Stay on top of your tasks</p>
-        <button
-          className="btn-primary cursor-pointer"
-          onClick={() => navigate('/todo')}
+        <p className="text-zinc-400">Stay on top of your tasks</p>
+        <button 
+          onClick={()=>{navigate("/todo")}} 
+          className="pointer-events-auto mt-8 px-8 py-3 bg-white text-black font-semibold rounded-full hover:bg-opacity-10 hover:text-white hover:border-white transition-all duration-300 transform hover:scale-105 hover:shadow-lg shadow-md border border-white backdrop-blur-sm"
         >
           Get Started
         </button>
